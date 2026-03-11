@@ -1,74 +1,171 @@
-# FitLine-Gym: AI-Powered Fitness Application
+# FitLine – AI Powered Fitness Web Application
 
-FitLine is a professional, production-ready fitness web application that combines personalized workout management, AI-powered coaching, and real-time progress tracking.
+FitLine is a full-stack fitness web application designed to help users manage workouts, monitor progress, and receive AI-driven fitness guidance. The application combines structured workout routines, real-time workout tools, and personalized analytics to support users in achieving their fitness goals.
 
-## Live Demo
+The platform includes an AI fitness coach, progress tracking dashboards, smart workout routines, and a guided onboarding process that calculates key health metrics such as BMI and daily calorie requirements.
 
-Check it out here: [https://fit-line-main.vercel.app/](https://fit-line-main.vercel.app/)
+Live Demo:  
+https://fit-line-main.vercel.app/
 
-## Key Features
+---
 
-- AI Fitness Coach: A real-time chat interface that learns from your workout history and provides personalized advice.
-- Smart Workouts: 9+ pre-designed routines ranging from "Quickie" to "Beast" mode, tailored to your experience level.
-- Interactive Timer: Advanced workout timer with work/rest phases, voice guidance (Text-to-Speech), and visual feedback.
-- Progress Analytics: Track your weekly completions, total sessions, weight changes, and calorie burn.
-- Personalized Setup: A 5-step onboarding wizard to calculate BMI, TDEE, and customize your fitness journey.
-- Secure Authentication: Email and Google OAuth integration via Firebase.
-- Fully Responsive: Optimized for mobile, tablet, and desktop.
+## Features
+
+### AI Fitness Coach
+
+A conversational interface that analyzes workout history and provides personalized fitness guidance.
+
+### Smart Workout Programs
+
+Predefined workout routines designed for different experience levels, ranging from beginner sessions to advanced training modes.
+
+### Interactive Workout Timer
+
+A structured workout timer with configurable work and rest phases, real-time feedback, and voice guidance using text-to-speech.
+
+### Progress Tracking and Analytics
+
+Dashboard visualizations displaying:
+
+- Weekly workout completion
+- Total workout sessions
+- Weight tracking
+- Estimated calorie burn
+
+### Personalized Onboarding
+
+A multi-step onboarding system that collects user data and calculates:
+
+- Body Mass Index (BMI)
+- Total Daily Energy Expenditure (TDEE)
+- Customized fitness recommendations
+
+### Secure Authentication
+
+User authentication implemented with Firebase, supporting:
+
+- Email and password login
+- Google OAuth sign-in
+
+### Responsive Interface
+
+Fully responsive UI optimized for mobile, tablet, and desktop devices.
+
+---
 
 ## Tech Stack
 
-- Frontend: React 18, TypeScript, Vite
-- Styling: Tailwind CSS, shadcn/ui, Lucide Icons
-- Backend/Database: Firebase (Authentication & Firestore)
-- State Management: React Context, TanStack Query
-- Charts: Recharts
+### Frontend
 
-## Getting Started
+- React 18
+- TypeScript
+- Vite
 
-1. Clone the repository:
+### UI and Styling
 
-   ```bash
-   git clone https://github.com/Aahan-Desai/FitLine.git
-   cd FitLine
-   ```
+- Tailwind CSS
+- shadcn/ui
+- Lucide Icons
 
-2. Install dependencies:
+### Backend and Database
 
-   ```bash
-   npm install
-   ```
+- Firebase Authentication
+- Firebase Firestore
 
-3. Environment Setup:
-   Create a .env.local file with your Firebase configuration:
+### State Management
 
-   ```env
-   VITE_FIREBASE_API_KEY=your_api_key_here
-   VITE_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
-   VITE_FIREBASE_PROJECT_ID=your_project_id
-   VITE_FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
-   VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
-   VITE_FIREBASE_APP_ID=your_app_id
-   VITE_FIREBASE_MEASUREMENT_ID=your_measurement_id
-   ```
+- React Context API
+- TanStack Query
 
-4. Run development server:
-   ```bash
-   npm run dev
-   ```
+### Data Visualization
 
-## Documentation
+- Recharts
 
-The project includes comprehensive guides in the root directory:
+### Deployment
 
-- PROJECT_DOCUMENTATION.md: Full architectural overview.
-- ARCHITECTURE.md: System design and data flow diagrams.
-- VERCEL_DEPLOYMENT_GUIDE.md: Step-by-Step guide for hosting.
+- Vercel
+
+---
+
+## Project Architecture
+
+The application follows a modular frontend architecture with Firebase providing backend services.
+
+Key architectural components include:
+
+- Component-based UI built with React
+- Centralized state management using React Context
+- Server state handling using TanStack Query
+- Firebase for authentication and real-time database
+- Modular UI components using shadcn
+
+Detailed documentation is available in:
+
+- `PROJECT_DOCUMENTATION.md`
+- `ARCHITECTURE.md`
+
+---
+
+## Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Aahan-Desai/FitLine.git
+cd FitLine
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Environment Configuration
+
+Create a `.env.local` file in the root directory and add your Firebase configuration.
+
+```env
+VITE_FIREBASE_API_KEY=your_api_key_here
+VITE_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
+VITE_FIREBASE_MEASUREMENT_ID=your_measurement_id
+```
+
+### 4. Run the Development Server
+
+```bash
+npm run dev
+```
+
+The application will start on the local development server.
+
+---
+
+## Deployment
+
+The project is deployed using Vercel.
+
+Deployment instructions are available in:
+
+- `VERCEL_DEPLOYMENT_GUIDE.md`
+
+---
+
+## Future Improvements
+
+Potential improvements for the project include:
+
+- AI-based workout plan generation
+- Wearable device integration
+- Nutrition tracking module
+- Social fitness challenges and leaderboards
+
+---
 
 ## Author
 
 Aahan Desai
-
----
-
-Built to help people reach their fitness goals through technology.

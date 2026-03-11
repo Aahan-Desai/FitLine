@@ -1,73 +1,74 @@
-# Welcome to your Lovable project
+# FitLine-Gym: AI-Powered Fitness Application
 
-## Project info
+FitLine is a professional, production-ready fitness web application that combines personalized workout management, AI-powered coaching, and real-time progress tracking.
 
-**URL**: https://lovable.dev/projects/28b9b612-3094-42ca-b849-1f3bc7886203
+## Live Demo
 
-## How can I edit this code?
+Check it out here: [https://fit-line-main.vercel.app/](https://fit-line-main.vercel.app/)
 
-There are several ways of editing your application.
+## Key Features
 
-**Use Lovable**
+- AI Fitness Coach: A real-time chat interface that learns from your workout history and provides personalized advice.
+- Smart Workouts: 9+ pre-designed routines ranging from "Quickie" to "Beast" mode, tailored to your experience level.
+- Interactive Timer: Advanced workout timer with work/rest phases, voice guidance (Text-to-Speech), and visual feedback.
+- Progress Analytics: Track your weekly completions, total sessions, weight changes, and calorie burn.
+- Personalized Setup: A 5-step onboarding wizard to calculate BMI, TDEE, and customize your fitness journey.
+- Secure Authentication: Email and Google OAuth integration via Firebase.
+- Fully Responsive: Optimized for mobile, tablet, and desktop.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/28b9b612-3094-42ca-b849-1f3bc7886203) and start prompting.
+## Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- Frontend: React 18, TypeScript, Vite
+- Styling: Tailwind CSS, shadcn/ui, Lucide Icons
+- Backend/Database: Firebase (Authentication & Firestore)
+- State Management: React Context, TanStack Query
+- Charts: Recharts
 
-**Use your preferred IDE**
+## Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. Clone the repository:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+   ```bash
+   git clone https://github.com/Aahan-Desai/FitLine.git
+   cd FitLine
+   ```
 
-Follow these steps:
+2. Install dependencies:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+   ```bash
+   npm install
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+3. Environment Setup:
+   Create a .env.local file with your Firebase configuration:
 
-# Step 3: Install the necessary dependencies.
-npm i
+   ```env
+   VITE_FIREBASE_API_KEY=your_api_key_here
+   VITE_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+   VITE_FIREBASE_PROJECT_ID=your_project_id
+   VITE_FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
+   VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+   VITE_FIREBASE_APP_ID=your_app_id
+   VITE_FIREBASE_MEASUREMENT_ID=your_measurement_id
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+4. Run development server:
+   ```bash
+   npm run dev
+   ```
 
-**Edit a file directly in GitHub**
+## Documentation
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The project includes comprehensive guides in the root directory:
 
-**Use GitHub Codespaces**
+- PROJECT_DOCUMENTATION.md: Full architectural overview.
+- ARCHITECTURE.md: System design and data flow diagrams.
+- VERCEL_DEPLOYMENT_GUIDE.md: Step-by-Step guide for hosting.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Author
 
-## What technologies are used for this project?
+Aahan Desai
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/28b9b612-3094-42ca-b849-1f3bc7886203) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Built to help people reach their fitness goals through technology.

@@ -873,17 +873,29 @@ const WorkoutSession = () => {
                 </>
               )}
 
-              {manualMode && (
+              {!isRestPhase && currentExercise && (isRunning || secondsLeft !== null) && (
                 <Button 
-                  onClick={handleCompleteSet}
-                  variant="secondary"
+                  onClick={handleSetComplete}
                   size="lg"
-                  className="px-6 py-3 rounded-xl shadow-lg"
+                  className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 >
+                  <CheckCircle className="w-5 h-5 mr-2" />
                   Complete Set
                 </Button>
               )}
               
+              {workoutStartTime && (
+                <Button 
+                  onClick={endWorkout}
+                  variant="outline" 
+                  size="lg"
+                  className="border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white font-bold px-4 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  <Trophy className="w-4 h-4 mr-2" />
+                  End Session
+                </Button>
+              )}
+
               <Button 
                 onClick={handleRestart} 
                 variant="outline" 
